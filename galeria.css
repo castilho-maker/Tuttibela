@@ -1,0 +1,91 @@
+      
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+
+      .header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .header nav ul li {
+        margin: 0 15px;
+      }
+
+      .header nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .container_slides {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .grupo_slides {
+        display: flex;
+        /* transition: transform 0.5s ease-in-out; */
+        animation: slide 0.5s ease-in-out;
+      }
+
+      .item_slides {
+        min-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        display: none;
+      }
+
+      .item_slides img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+      }
+
+      .texto {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+      }
+
+      .controles_slides {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .controle {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .controle:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .active {
+        display: block;
+      }
+      @keyframes slide {
+        from {
+          opacity: 0;
+        }
+        to {   opacity: 1;
+        }
+      }

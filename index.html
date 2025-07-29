@@ -1,0 +1,591 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuttibela - Cosméticos Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="logo" height="80px">
+                    <h1>Tuttibela</h1>
+                    <span>Cosméticos Premium</span>
+                </div>
+                </head>
+                <body>
+                    <nav class="nav" id="nav">
+                        <ul class="nav-list">
+                            <li><a href="#home" data-page="home">Home</a></li>
+
+                            <li><a href="#sobre" data-page="sobre">Sobre</a></li>
+                            <li><a href="#sobre" data-page="sobre">Sobre</a></li>
+                            <li><a href="#sobre" data-page="sobre">Sobre</a></li>
+                            <li><a href="#contato" data-page="contato">Contato</a></li>
+                        </ul>
+                    </nav>
+    </header>
+    <li class="dropdown">
+        <a href="#categorias" data-page="categorias">Categorias <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="#" data-category="maquiagem">Maquiagem</a></li>
+            <li><a href="#" data-category="skincare">Skincare</a></li>
+            <li><a href="#" data-category="perfumes">Perfumes</a></li>
+            <li><a href="#" data-category="cabelos">Cabelos</a></li>
+            <li><a href="#" data-category="unhas">Unhas</a></li>
+        </ul>
+    </li>
+    <section>
+        <h1>Conteudo do site</h1>
+    </section>
+    <div class="header-actions">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar produtos..." id="searchInput">
+            <i class="fas fa-search"></i>
+        </div>
+        <button class="user-btn" id="userBtn"><i class="fas fa-user"></i></button>
+        <button class="cart-btn" id="cartBtn">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    </div>
+    </div>
+    <div class="container_slides">
+        <div class="grupo_slides">
+            <div class="item_slides">
+                <img src="images/3d-rendering-personal-care-products-fondant-pink.jpg" alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+            <div class="item_slides">
+                <img src="images/blush-lilac-makeup-brushes-straw-hat-are-located-isolated-pink.jpg"
+                    alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+            <div class="item_slides">
+                <img src="images/pink-model-career-kit-arrangement (1).jpg" alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+            <div class="item_slides">
+                <img src="images/pink-model-career-kit-arrangement (2).jpg" alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+            <div class="item_slides">
+                <img src="images/pink-model-career-kit-arrangement.jpg" alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+            <div class="item_slides">
+                <img src="images/pink-model-career-kit-arrangement.jpg" alt="Produtos" />
+                <span class="texto">Produto</span>
+            </div>
+        </div>
+        <div class="controles_slides">
+            <div class="controle prev">⟪</div>
+            <div class="controle next">⟫</div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <section class="page active" id="home-page">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Descubra sua beleza única</h1>
+                    <p>Cosméticos premium para realçar o melhor de você</p>
+                    <button class="cta-btn">Explorar Produtos</button>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-product"></div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="categories-section">
+                <div class="container">
+                    <h2>Nossas Categorias</h2>
+                    <div class="categories-grid">
+                        <div class="category-card" data-category="maquiagem">
+                            <div class="category-icon">💄</div>
+                            <h3>Maquiagem</h3>
+                            <p>Bases, batons, sombras e muito mais</p>
+                        </div>
+                        <div class="category-card" data-category="skincare">
+                            <div class="category-icon">✨</div>
+                            <h3>Skincare</h3>
+                            <p>Cuidados essenciais para sua pele</p>
+                        </div>
+                        <div class="category-card" data-category="perfumes">
+                            <div class="category-icon">🌸</div>
+                            <h3>Perfumes</h3>
+                            <p>Fragrâncias únicas e marcantes</p>
+                        </div>
+                        <div class="category-card" data-category="cabelos">
+                            <div class="category-icon">💇‍♀️</div>
+                            <h3>Cabelos</h3>
+                            <p>Produtos para cabelos saudáveis</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="featured-products">
+                <div class="container">
+                    <h2>Produtos em Destaque</h2>
+                    <div class="products-grid" id="featuredProducts">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Products Page -->
+        <section class="page" id="categorias-page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Nossos Produtos</h1>
+                    <div class="filters">
+                        <select id="categoryFilter">
+                            <option value="">Todas as categorias</option>
+                            <option value="maquiagem">Maquiagem</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="perfumes">Perfumes</option>
+                            <option value="cabelos">Cabelos</option>
+                            <option value="unhas">Unhas</option>
+                        </select>
+                        <select id="priceFilter">
+                            <option value="">Todos os preços</option>
+                            <option value="0-50">R$ 0 - R$ 50</option>
+                            <option value="50-100">R$ 50 - R$ 100</option>
+                            <option value="100-200">R$ 100 - R$ 200</option>
+                            <option value="200+">R$ 200+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="products-grid" id="allProducts">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section class="page" id="sobre-page">
+            <div class="container">
+                <div class="about-content">
+                    <h1>Sobre a TUttibela</h1>
+                    <p>Há mais de 10 anos, a TUttibela se dedica a oferecer os melhores cosméticos premium para realçar
+                        a beleza única de cada cliente. Nossa missão é proporcionar produtos de alta qualidade que fazem
+                        você se sentir confiante e radiante.</p>
+
+                    <div class="gallery-section">
+                        <h2>Nossa Galeria</h2>
+                        <div class="gallery-grid" id="gallery">
+                            <!-- Gallery images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section class="page" id="contato-page">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>Rua das Flores, 123<br>Centro, São Paulo - SP</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contato@tuttibela.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <input type="text" placeholder="Assunto" required>
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Area -->
+        <section class="page" id="user-page">
+            <div class="container">
+                <div class="user-area">
+                    <div class="user-sidebar">
+                        <div class="user-profile">
+                            <div class="user-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3 id="userName">Usuário</h3>
+                        </div>
+                        <nav class="user-nav">
+                            <button class="user-nav-btn active" data-section="profile">Meu Perfil</button>
+                            <button class="user-nav-btn" data-section="orders">Meus Pedidos</button>
+                            <button class="user-nav-btn" data-section="favorites">Favoritos</button>
+                            <button class="user-nav-btn" id="logoutBtn">Sair</button>
+                        </nav>
+                    </div>
+                    <div class="user-content">
+                        <!-- Profile Section -->
+                        <div class="user-section active" id="profile-section">
+                            <h2>Meu Perfil</h2>
+                            <form class="profile-form" id="profileForm">
+                                <div class="form-group">
+                                    <label>Nome Completo</label>
+                                    <input type="text" id="profileName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="profileEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefone</label>
+                                    <input type="tel" id="profilePhone">
+                                </div>
+                                <div class="form-group">
+                                    <label>Data de Nascimento</label>
+                                    <input type="date" id="profileBirth">
+                                </div>
+                                <button type="submit">Salvar Alterações</button>
+                            </form>
+                        </div>
+
+                        <!-- Orders Section -->
+                        <div class="user-section" id="orders-section">
+                            <h2>Meus Pedidos</h2>
+                            <div class="orders-list" id="ordersList">
+                                <!-- Orders will be loaded here -->
+                            </div>
+                        </div>
+
+                        <!-- Favorites Section -->
+                        <div class="user-section" id="favorites-section">
+                            <h2>Meus Favoritos</h2>
+                            <div class="products-grid" id="favoritesList">
+                                <!-- Favorite products will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Carrinho de Compras</h2>
+                <button class="close-btn" id="closeCartBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-line">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">R$ 0,00</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Frete:</span>
+                        <span id="cartShipping">R$ 15,00</span>
+                    </div>
+                    <div class="total-line total">
+                        <span>Total:</span>
+                        <span id="cartTotal">R$ 15,00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="continueShopping">Continuar Comprando</button>
+                <button class="btn-primary" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Finalizar Compra</h2>
+                <button class="close-btn" id="closeCheckoutBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span>Endereço</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span>Pagamento</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span>Confirmação</span>
+                    </div>
+                </div>
+
+                <div class="checkout-content">
+                    <!-- Step 1: Address -->
+                    <div class="checkout-step active" id="step1">
+                        <h3>Endereço de Entrega</h3>
+                        <form class="address-form" id="addressForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>CEP</label>
+                                    <input type="text" id="cep" placeholder="00000-000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Rua</label>
+                                    <input type="text" id="street" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Número</label>
+                                    <input type="text" id="number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Complemento</label>
+                                    <input type="text" id="complement">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Bairro</label>
+                                    <input type="text" id="neighborhood" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Cidade</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado</label>
+                                    <select id="state" required>
+                                        <option value="">Selecione</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <!-- Add more states -->
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Payment -->
+                    <div class="checkout-step" id="step2">
+                        <h3>Forma de Pagamento</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="credit" name="payment" value="credit" checked>
+                                <label for="credit">
+                                    <i class="fas fa-credit-card"></i>
+                                    Cartão de Crédito
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="debit" name="payment" value="debit">
+                                <label for="debit">
+                                    <i class="fas fa-credit-card"></i>
+                                    Cartão de Débito
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="pix" name="payment" value="pix">
+                                <label for="pix">
+                                    <i class="fas fa-qrcode"></i>
+                                    PIX
+                                </label>
+                            </div>
+                        </div>
+                        <div class="payment-form" id="cardForm">
+                            <div class="form-group">
+                                <label>Número do Cartão</label>
+                                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Validade</label>
+                                    <input type="text" id="cardExpiry" placeholder="MM/AA">
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" id="cardCvv" placeholder="000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Nome no Cartão</label>
+                                <input type="text" id="cardName" placeholder="Nome como impresso no cartão">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Confirmation -->
+                    <div class="checkout-step" id="step3">
+                        <h3>Confirmação do Pedido</h3>
+                        <div class="order-summary">
+                            <div class="summary-section">
+                                <h4>Produtos</h4>
+                                <div id="orderItems"></div>
+                            </div>
+                            <div class="summary-section">
+                                <h4>Endereço de Entrega</h4>
+                                <div id="deliveryAddress"></div>
+                            </div>
+                            <div class="summary-section">
+                                <h4>Forma de Pagamento</h4>
+                                <div id="paymentMethod"></div>
+                            </div>
+                            <div class="summary-total">
+                                <div class="total-line">
+                                    <span>Total do Pedido:</span>
+                                    <span id="orderTotal">R$ 0,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="prevStepBtn" style="display: none;">Voltar</button>
+                <button class="btn-primary" id="nextStepBtn">Continuar</button>
+                <button class="btn-primary" id="finishOrderBtn" style="display: none;">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="authTitle">Entrar</h2>
+                <button class="close-btn" id="closeLoginBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form" id="authForm">
+                    <div class="form-group" id="nameGroup" style="display: none;">
+                        <label>Nome Completo</label>
+                        <input type="text" id="authName" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="authEmail" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" id="authPassword" placeholder="Sua senha" required>
+                    </div>
+                    <button type="submit" id="authSubmitBtn">Entrar</button>
+                </form>
+                <div class="auth-switch">
+                    <p id="authSwitchText">Não tem uma conta? <a href="#" id="authSwitchLink">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <button class="close-btn" id="closeProductBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-details">
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img id="productMainImage" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h2 id="productName"></h2>
+                        <div class="product-price">
+                            <span class="current-price" id="productPrice"></span>
+                            <span class="original-price" id="productOriginalPrice"></span>
+                        </div>
+                        <div class="product-description">
+                            <p id="productDescription"></p>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="decreaseQty">-</button>
+                                <input type="number" id="productQuantity" value="1" min="1">
+                                <button class="qty-btn" id="increaseQty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" id="addToCartBtn">
+                                <i class="fas fa-shopping-bag"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                            <button class="favorite-btn" id="favoriteBtn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Details Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Detalhes do Pedido</h2>
+                <button class="close-btn" id="closeOrderBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="order-details" id="orderDetails">
+                    <!-- Order details will be loaded here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-danger" id="cancelOrderBtn" style="display: none;">Cancelar Pedido</button>
+                <button class="btn-secondary" id="closeOrderDetailsBtn">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="galeria.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
