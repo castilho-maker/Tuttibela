@@ -1,0 +1,517 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capilar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Patung:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-brand">
+          <a href="index.html"><img src="/img/Logo-Tuttibella copy.png" alt="logo" height="108px" /></a>
+      </div>
+<div style="display: flex; gap: 20px;">
+      <div>
+       <input type="text" placeholder="Pesquisar produtos..." class="search-input" style="text-align: left; padding-left: 15px;" />
+
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+    <section class="actions" style="margin-left: 0px!important;
+          margin-right: 0px!important;">
+        <div class="nav-actions">
+          <button class="user-btn" onclick="openUserModal()">
+            <i class="fas fa-user"></i>
+          </button>
+          <button class="cart-btn" onclick="openCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </section>
+</div>
+
+
+    </div>
+
+    <section>
+      <nav class="nav-menu">
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="capilar.html">Capilar</a>
+          <a href="#produtos">Facial</a>
+          <a href="#produtos">Corporal</a>
+          <a href="#produtos">Higiênie Corporal</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <!-- Navigation Menu -->
+
+  <!-- Hero Slider -->
+  
+
+  <!-- Products Section -->
+   <h2 class="section-title" style="font-family: 'Patung';">Capilar</h2>
+<div class="product-filters">
+  <div class="filter-search">
+    <input type="text" id="searchInput" placeholder="Buscar por nome..." />
+    <button onclick="filterProducts()">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+ 
+</div>
+
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Makeup Brushes with Slider -->
+        <div class="product-card makeup-brushes-card" data-category="maquiagem">
+          <div class="makeup-slider-container">
+            <div class="makeup-slider">
+              <div class="makeup-slide active">
+                <img src="/img/makeup-slide-2.png" alt="Pincéis de Maquiagem" />
+              </div>
+              <div class="makeup-slide">
+                <img src="/img/maquiagem.png" alt="Mulher Negra Maquiada" />
+              </div>
+              <div class="makeup-slide">
+                <img src="/img/makeup-slide-2.png" alt="Look de Maquiagem" />
+              </div>
+            </div>
+            <div class="makeup-slider-controls">
+              <button class="makeup-prev" onclick="prevMakeupSlide()">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="makeup-next" onclick="nextMakeupSlide()">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kit Pincéis Profissionais</h3>
+            <p class="product-description">Set completo com 12 pincéis</p>
+            <div class="product-price">
+              <span class="current-price">R$ 159,90</span>
+              <span class="original-price">R$ 199,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(4)">
+              Adicionar ao Carrinho
+            </button>
+               <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+          </div>
+        </div>
+        <div class="product-card" data-category="cabelo">
+          <div class="product-image">
+            <img src="img/kerastase-product.png" alt="Kérastase Nutritive" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kérastase Nutritive</h3>
+            <p class="product-description">
+              Shampoo nutritivo para cabelos secos
+            </p>
+            <div class="product-price">
+              <span class="current-price">R$ 89,90</span>
+              <span class="original-price">R$ 119,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(1)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+
+        <div class="product-card" data-category="perfume">
+          <div class="product-image">
+            <img src="img/carolina-herrera-perfume.png" alt="Carolina Herrera" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Carolina Herrera</h3>
+            <p class="product-description">Perfume Good Girl 80ml</p>
+            <div class="product-price">
+              <span class="current-price">R$ 389,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(2)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+  <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+
+        <div class="product-card" data-category="skincare">
+          <div class="product-image">
+            <img src="img/loreal-serum.png" alt="L'Oréal Sérum" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>L'Oréal Revitalift</h3>
+            <p class="product-description">Sérum anti-idade com vitamina C</p>
+            <div class="product-price">
+              <span class="current-price">R$ 79,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(3)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+<h2 class="section-title">Promoções</h2>
+      </section>
+  
+
+  <section class="banner-divisao">
+  <div class="banner-slider">
+    <div class="banner-slide active">
+      <img src="/img/mulheres de varias raças 01.jpg" alt="Banner 1" />
+    </div>
+    <div class="banner-slide">
+      <img src="/img/mulheres de varias raças.jpg" alt="Banner 2" />
+    </div>
+    <div class="banner-slide">
+      <img src="/img/makeup-slide-1.png" alt="Banner 3" />
+    </div>
+
+    <button class="banner-prev" onclick="prevBannerSlide()">&#10094;</button>
+    <button class="banner-next" onclick="nextBannerSlide()">&#10095;</button>
+  </div>
+</section>
+
+
+  <!-- Products Section -->
+  <section class="products-section" id="produtos">
+    <div class="container">
+      
+     
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Makeup Brushes with Slider -->
+        <div class="product-card makeup-brushes-card" data-category="maquiagem">
+          <div class="makeup-slider-container">
+            <div class="makeup-slider">
+              <div class="makeup-slide active">
+                <img src="/img/makeup-slide-2.png" alt="Pincéis de Maquiagem" />
+              </div>
+              <div class="makeup-slide">
+                <img src="/img/maquiagem.png" alt="Mulher Negra Maquiada" />
+              </div>
+              <div class="makeup-slide">
+                <img src="/img/makeup-slide-2.png" alt="Look de Maquiagem" />
+              </div>
+            </div>
+            <div class="makeup-slider-controls">
+              <button class="makeup-prev" onclick="prevMakeupSlide()">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="makeup-next" onclick="nextMakeupSlide()">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kit Pincéis Profissionais</h3>
+            <p class="product-description">Set completo com 12 pincéis</p>
+            <div class="product-price">
+              <span class="current-price">R$ 159,90</span>
+              <span class="original-price">R$ 199,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(4)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/makeup-slide-1.png', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+        <div class="product-card" data-category="cabelo">
+          <div class="product-image">
+            <img src="img/kerastase-product.png" alt="Kérastase Nutritive" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kérastase Nutritive</h3>
+            <p class="product-description">
+              Shampoo nutritivo para cabelos secos
+            </p>
+            <div class="product-price">
+              <span class="current-price">R$ 89,90</span>
+              <span class="original-price">R$ 119,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(1)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+
+        <div class="product-card" data-category="perfume">
+          <div class="product-image">
+            <img src="img/carolina-herrera-perfume.png" alt="Carolina Herrera" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Carolina Herrera</h3>
+            <p class="product-description">Perfume Good Girl 80ml</p>
+            <div class="product-price">
+              <span class="current-price">R$ 389,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(2)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/perfumes.jpeg', 
+  'R$ 89,90')">
+   <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+
+        <div class="product-card" data-category="skincare">
+          <div class="product-image">
+            <img src="img/loreal-serum.png" alt="L'Oréal Sérum" />
+            <div class="product-overlay">
+
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>L'Oréal Revitalift</h3>
+            <p class="product-description">Sérum anti-idade com vitamina C</p>
+            <div class="product-price">
+              <span class="current-price">R$ 79,90</span>
+            </div>
+            <button class="add-to-cart-btn" onclick="addToCart(3)">
+              Adicionar ao Carrinho
+            </button>
+            <button class="view-details-btn" onclick="showProductDetails(
+  1, 
+  'Kérastase Nutritive', 
+  'Shampoo nutritivo para cabelos secos, fórmula rica em nutrientes que hidrata e fortalece os fios.', 
+  'img/kerastase-product.png', 
+  'R$ 89,90')">
+    <i class="fas fa-eye"></i> Ver Detalhes
+</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Tuttibela</h3>
+          <p>
+            Sua loja de cosméticos com os melhores produtos para
+            realçar sua beleza natural.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="#">Maquiagem</a></li>
+            <li><a href="#">Cuidados com a Pele</a></li>
+            <li><a href="#">Pele</a></li>
+            <li><a href="#">Perfumes</a></li>
+            <li><a href="#">Acessórios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Entrega e Frete</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+        <a href="https://api.whatsapp.com/send?phone=5511948457700&text=Texto%20aqui"
+    target="_blank"
+    style="position:fixed;bottom:20px;left:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
+          <h4>Contato</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i>(11) 94845.7700 </p>
+            <p>Veruska D. R. de Oliveira</p>
+            <p><i class="fas fa-envelope"></i> veruzkadesigner@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Receba ofertas exclusivas e novidades</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit">Inscrever</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© 2025 Tuttibela.Todos os direitos reservados.</p>
+          <div class="payment-methods">
+            <span>Formas de pagamento:</span>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fas fa-barcode"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- User Modal -->
+  <div class="modal" id="userModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeUserModal()">&times;</span>
+      <div class="modal-tabs">
+        <button class="tab-btn active" onclick="showLogin()">Entrar</button>
+        <button class="tab-btn" onclick="showRegister()">Cadastrar</button>
+      </div>
+
+      <div class="tab-content" id="loginTab">
+        <h3>Entrar na sua conta</h3>
+        <form id="loginForm">
+          <input type="email" placeholder="E-mail" required />
+          <input type="password" placeholder="Senha" required />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+
+      <div class="tab-content hidden" id="registerTab">
+        <h3>Criar nova conta</h3>
+        <form id="registerForm">
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="E-mail" required />
+          <input type="password" placeholder="Senha" required />
+          <input type="password" placeholder="Confirmar senha" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Carrinho de Compras</h3>
+      <button class="close-cart" onclick="closeCart()">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be populated here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <strong>Total: <span id="cartTotal">R$ 0,00</span></strong>
+      </div>
+      <button class="checkout-btn" onclick="checkout()">
+        Finalizar Compra
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
